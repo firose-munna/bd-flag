@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+     
+     --rectangle-width: 60dvw;
+     --rectangle-height: calc(var(--rectangle-width)/2);
+     --circle-radius: calc(var(--rectangle-height)/3);
+}
+
+.circle{
+     width: calc(var(--circle-radius) *2 );
+     height: calc(var(--circle-radius) *2 );
+     position: absolute;
+     background: red;
+     /* left: calc(calc(var(--rectangle-width)/2) - var(--circle-radius));
+     top: calc(calc(var(--rectangle-height)/2) - var(--circle-radius)); */
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     border-radius: 50%;
+
+}
+ 
+.rectagle{
+     background: green;
+     width: var(--rectangle-width);
+     height: var(--rectangle-height);
+     /* position: absolute; */
+}
+
+.container{
+     height: 100dvh;
+     width: 100dvw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
